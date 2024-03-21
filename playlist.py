@@ -24,10 +24,8 @@ class DL_PlayList:
         except Exception as e:
             print(f"Error saving to file: {e}")
 
-    def DL_List():
-        playlist_url = input("Enter PlayList link:")  # Replace with your playlist URL
-        output_file = "playlist_videos.txt"  # Output file name
-
+    def DL_List(playlist_url,output_file):
+        
         video_urls = DL_PlayList.get_playlist_video_urls(playlist_url)
         if video_urls:
             DL_PlayList.save_to_txt(video_urls, output_file)
