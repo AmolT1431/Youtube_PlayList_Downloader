@@ -17,7 +17,7 @@ def download_video(url,name):
         print(f"Error downloading {url}: {e}")
 
 
-playlist_url = input("Enter PlayList link : ")  # Replace with your playlist URL
+playlist_url = input("Enter Youtube PlayList link : ")  # Replace with your playlist URL
 output_file = input("Enter PlayList Name : ")  # Output file name
 
 DL_PlayList.DL_List(playlist_url,output_file+".txt")
